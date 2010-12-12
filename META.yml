@@ -1,0 +1,31 @@
+---
+abstract: "stop processing the entire test suite\nupon the first failure."
+author:
+  - 'Shlomi Fish <shlomif@cpan.org>'
+build_requires:
+  Test::More: 0
+  Test::Run::CmdLine::Trap::ProveApp: 0
+  Test::Trap: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
+license: mit
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Test-Run-Plugin-BreakOnFailure
+provides:
+  Test::Run::CmdLine::Plugin::BreakOnFailure:
+    file: lib/Test/Run/CmdLine/Plugin/BreakOnFailure.pm
+    version: v0.0.1
+  Test::Run::Plugin::BreakOnFailure:
+    file: lib/Test/Run/Plugin/BreakOnFailure.pm
+    version: v0.0.1
+requires:
+  MRO::Compat: 0
+  Moose: 0
+  Test::Run::CmdLine: 0.0120
+  Test::Run::Core: 0.0120
+resources:
+  license: http://opensource.org/licenses/mit-license.php
+version: v0.0.1
