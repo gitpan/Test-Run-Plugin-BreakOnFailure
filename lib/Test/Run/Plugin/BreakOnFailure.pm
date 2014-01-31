@@ -3,6 +3,8 @@ package Test::Run::Plugin::BreakOnFailure;
 use warnings;
 use strict;
 
+use 5.008;
+
 use MRO::Compat;
 
 use Moose;
@@ -14,11 +16,11 @@ upon the first failure.
 
 =head1 VERSION
 
-Version 0.0.2
+Version 0.0.3
 
 =cut
 
-our $VERSION = '0.0.2';
+our $VERSION = '0.0.3';
 
 extends('Test::Run::Base');
 
