@@ -4,7 +4,7 @@
       "Shlomi Fish <shlomif@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830",
+   "generated_by" : "Module::Build version 0.4205",
    "license" : [
       "mit"
    ],
@@ -18,8 +18,7 @@
          "requires" : {
             "Test::More" : "0",
             "Test::Run::CmdLine::Trap::ProveApp" : "0",
-            "Test::Trap" : "0",
-            "perl" : "5.008"
+            "Test::Trap" : "0"
          }
       },
       "configure" : {
@@ -32,18 +31,24 @@
             "MRO::Compat" : "0",
             "Moose" : "0",
             "Test::Run::CmdLine" : "0.0120",
-            "Test::Run::Core" : "0.0120"
+            "Test::Run::Core" : "0.0120",
+            "perl" : "5.008"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "YAML::XS" : "0"
          }
       }
    },
    "provides" : {
       "Test::Run::CmdLine::Plugin::BreakOnFailure" : {
          "file" : "lib/Test/Run/CmdLine/Plugin/BreakOnFailure.pm",
-         "version" : "v0.0.3"
+         "version" : "v0.0.4"
       },
       "Test::Run::Plugin::BreakOnFailure" : {
          "file" : "lib/Test/Run/Plugin/BreakOnFailure.pm",
-         "version" : "v0.0.3"
+         "version" : "v0.0.4"
       }
    },
    "release_status" : "stable",
@@ -52,8 +57,5 @@
          "http://www.opensource.org/licenses/mit-license.php"
       ]
    },
-   "version" : "v0.0.3",
-   "x_test_requires" : {
-      "YAML::XS" : "0"
-   }
+   "version" : "v0.0.4"
 }
